@@ -9,7 +9,7 @@ public class DefenderSpawner : MonoBehaviour
 
     private void OnMouseDown()
     {
-        SpawnDefender(GetClickPos());
+        BuyDefenderAndPlace(GetClickPos());
     }
 
     public void SetSelectedDefender(Defender defenderToSelect)
@@ -37,5 +37,18 @@ public class DefenderSpawner : MonoBehaviour
     private void SpawnDefender(Vector2 gridPos)
     {
         Defender newDefender = Instantiate(defender, gridPos, transform.rotation) as Defender;
+    }
+
+    void BuyDefenderAndPlace(Vector2 gridPos)
+    {
+        var StarDisplay = FindObjectOfType<StarDisplay>();
+        int defenderCost = defender.GetStarCost();
+        if (StarDisplay.HaveEnoughStars(defenderCost))
+            {
+                SpawnDefender(gridPos);
+                StarDisplay.SpendStars(defenderCost);
+            }
+        
+
     }
 }
