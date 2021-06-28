@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7982298306850383488}
   - component: {fileID: 3307969174623827465}
+  - component: {fileID: 6484445904503103589}
   - component: {fileID: 7982298306850383491}
   - component: {fileID: 1338055046}
   m_Layer: 0
@@ -48,6 +49,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starCost: 50
+--- !u!114 &6484445904503103589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7982298306850383490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ef953ca110765841a7cabc0ab02b3cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
 --- !u!95 &7982298306850383491
 Animator:
   serializedVersion: 3
