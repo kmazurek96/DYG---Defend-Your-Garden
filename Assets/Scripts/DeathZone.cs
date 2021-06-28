@@ -10,6 +10,7 @@ public class DeathZone : MonoBehaviour
         {
             int damage = otherCollider.GetComponent<Attacker>().DamageToPlayer();
             FindObjectOfType<HealthDisplay>().LostHealth(damage);
+            FindObjectOfType<LevelController>().SubEnemy();
             Destroy(otherCollider.gameObject);
         }
     }
