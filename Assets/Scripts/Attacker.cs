@@ -8,6 +8,7 @@ public class Attacker : MonoBehaviour
     [Range(0,5)]
     [SerializeField] float currentMoveSpeed = 1f;
     GameObject currentTarget;
+    [SerializeField] int damageToPlayer = 20;
 
 
     // Start is called before the first frame update
@@ -48,4 +49,10 @@ public class Attacker : MonoBehaviour
             health.DoDamage(damage);
         }
     }
+
+    public int DamageToPlayer()
+    {
+        return damageToPlayer;
+    }
+
 }

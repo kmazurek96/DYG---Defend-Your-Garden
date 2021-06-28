@@ -29,4 +29,9 @@ public class LevelLoad : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
+    public void LoadGameOverScene()
+    {
+        SceneManager.LoadScene("StartMenuScene");
+    }
+
 }
