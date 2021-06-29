@@ -4,18 +4,9 @@ using UnityEngine;
 
 public class LevelController : MonoBehaviour
 {
-    [SerializeField] int enemies;
-
-    void Start()
-    {
-        enemies = 0;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    [SerializeField] int enemies = 0; //number of enemies on level
+    bool isTimerFinished = false;
+     
 
     public void AddEnemy()
     {
@@ -25,6 +16,25 @@ public class LevelController : MonoBehaviour
     public void SubEnemy()
     {
         enemies--;
+        if(enemies <=0 && isTimerFinished)
+        {
+
+        }
+    }
+
+    public void LevelTimerFinished()
+    {
+        isTimerFinished = true;
+        StopSpawners();
+    }
+
+    private void StopSpawners()
+    {
+        AttackerSpawner[] spawnerArray = FindObjectsOfType<AttackerSpawner>();
+        foreach(AttackerSpawner spawner in spawnerArray)
+        {
+            spawner.StopSpawning();
+        }
     }
 
 }

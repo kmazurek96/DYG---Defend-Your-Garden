@@ -12,16 +12,12 @@ public class Health : MonoBehaviour
     public void DoDamage(float damage)
     {
         health -= damage;
-        if (health <= 0 && !GetComponent<Attacker>())
+        if (health <= 0)
         {
             Destroy(gameObject);
             
         }
-        else if (health <= 0 && GetComponent<Attacker>())
-        {
-            Destroy(gameObject);
-            FindObjectOfType<LevelController>().SubEnemy();
-        }
+    
 
 
     }

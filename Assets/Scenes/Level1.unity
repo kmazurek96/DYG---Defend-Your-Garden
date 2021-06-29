@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 329627bb965396548bfa731d4798e45f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemies: 0
 --- !u!4 &467833727
 Transform:
   m_ObjectHideFlags: 0
@@ -343,6 +344,42 @@ PrefabInstance:
     - target: {fileID: 3869702832299217223, guid: 93a36ca1b95df3c479aceb16d20d0ddb, type: 3}
       propertyPath: m_Name
       value: Spawners
+      objectReference: {fileID: 0}
+    - target: {fileID: 7869123575495867041, guid: 93a36ca1b95df3c479aceb16d20d0ddb, type: 3}
+      propertyPath: maxTimeBetweenSpawn
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7869123575495867041, guid: 93a36ca1b95df3c479aceb16d20d0ddb, type: 3}
+      propertyPath: minTimeBetweenSpawn
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7869123575659461369, guid: 93a36ca1b95df3c479aceb16d20d0ddb, type: 3}
+      propertyPath: maxTimeBetweenSpawn
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7869123575659461369, guid: 93a36ca1b95df3c479aceb16d20d0ddb, type: 3}
+      propertyPath: minTimeBetweenSpawn
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7869123575756442448, guid: 93a36ca1b95df3c479aceb16d20d0ddb, type: 3}
+      propertyPath: maxTimeBetweenSpawn
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7869123575756442448, guid: 93a36ca1b95df3c479aceb16d20d0ddb, type: 3}
+      propertyPath: minTimeBetweenSpawn
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7869123576306134232, guid: 93a36ca1b95df3c479aceb16d20d0ddb, type: 3}
+      propertyPath: maxTimeBetweenSpawn
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7869123576306134232, guid: 93a36ca1b95df3c479aceb16d20d0ddb, type: 3}
+      propertyPath: minTimeBetweenSpawn
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7869123576674672165, guid: 93a36ca1b95df3c479aceb16d20d0ddb, type: 3}
+      propertyPath: minTimeBetweenSpawn
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93a36ca1b95df3c479aceb16d20d0ddb, type: 3}
