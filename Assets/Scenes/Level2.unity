@@ -684,10 +684,6 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 307960931, guid: d156f0133b0b2d7488e531e13f3cd1e2, type: 3}
-      propertyPath: timer
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 1920678910, guid: d156f0133b0b2d7488e531e13f3cd1e2, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -783,10 +779,6 @@ PrefabInstance:
     - target: {fileID: 4301124254165846564, guid: d156f0133b0b2d7488e531e13f3cd1e2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4301124254165846566, guid: d156f0133b0b2d7488e531e13f3cd1e2, type: 3}
-      propertyPath: m_PresetInfoIsWorld
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4301124254165846584, guid: d156f0133b0b2d7488e531e13f3cd1e2, type: 3}
       propertyPath: m_Name

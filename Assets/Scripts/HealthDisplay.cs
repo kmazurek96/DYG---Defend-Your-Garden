@@ -31,7 +31,8 @@ public class HealthDisplay : MonoBehaviour
         }
         else if (health <= 0)
         {
-            FindObjectOfType<LevelLoad>().LoadGameOverScene();
+            FindObjectOfType<LevelController>().LostCanvasDisplay();
+            //FindObjectOfType<LevelLoad>().LoadGameOverScene();
         }
     }
 
