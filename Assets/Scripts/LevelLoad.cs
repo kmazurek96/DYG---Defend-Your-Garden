@@ -51,6 +51,11 @@ public class LevelLoad : MonoBehaviour
         Time.timeScale = 1;
     }
 
+    public void LoadOptionsMenuScene()
+    {
+        SceneManager.LoadScene("OptionsMenuScene");
+    }    
+
     public void QuitGame()
     {
         Application.Quit();

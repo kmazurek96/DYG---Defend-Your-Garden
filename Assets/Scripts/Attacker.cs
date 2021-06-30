@@ -21,7 +21,12 @@ public class Attacker : MonoBehaviour
 
     private void OnDestroy()
     {
-        FindObjectOfType<LevelController>().SubEnemy();
+        LevelController levelController = FindObjectOfType<LevelController>();
+        if(levelController != null)
+        {
+            levelController.SubEnemy();
+        }
+
     }
 
     void Update()
