@@ -11,7 +11,7 @@ public class AttackerSpawner : MonoBehaviour
 
     private IEnumerator Start()
     {
-            while(spawn)
+        while (spawn)
         {
             yield return new WaitForSeconds(Random.Range(minTimeBetweenSpawn, maxTimeBetweenSpawn));
             SpawnAttacker();
@@ -28,9 +28,8 @@ public class AttackerSpawner : MonoBehaviour
 
 
 
-    // Update is called once per frame
-    void Update()
+    public  void StopSpawning()
     {
-        
+        spawn = false;
     }
 }

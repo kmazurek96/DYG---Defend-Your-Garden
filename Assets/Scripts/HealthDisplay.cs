@@ -8,11 +8,13 @@ using UnityEngine.SceneManagement;
 
 public class HealthDisplay : MonoBehaviour
 {
-    [SerializeField] int health = 100;
+    [SerializeField] float baseHealth = 100;
+    float health;
     TMP_Text healthText;
     // Start is called before the first frame update
     void Start()
     {
+        health = baseHealth - PlayerPrefsController.GetDifficulty() * 40;
         healthText = GetComponent<TMP_Text>();
         UpdateHealthDisplay();
     }
@@ -31,7 +33,8 @@ public class HealthDisplay : MonoBehaviour
         }
         else if (health <= 0)
         {
-            FindObjectOfType<LevelLoad>().LoadGameOverScene();
+            FindObjectOfType<LevelController>().LostCanvasDisplay();
+            //FindObjectOfType<LevelLoad>().LoadGameOverScene();
         }
     }
 

@@ -14,6 +14,21 @@ public class Attacker : MonoBehaviour
     // Start is called before the first frame update
 
     // Update is called once per frame
+    private void Awake()
+    {
+        FindObjectOfType<LevelController>().AddEnemy();
+    }
+
+    private void OnDestroy()
+    {
+        LevelController levelController = FindObjectOfType<LevelController>();
+        if(levelController != null)
+        {
+            levelController.SubEnemy();
+        }
+
+    }
+
     void Update()
     {
         transform.Translate(Vector2.left * currentMoveSpeed * Time.deltaTime);

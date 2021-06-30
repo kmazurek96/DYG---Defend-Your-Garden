@@ -1,15 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class DefenderButton : MonoBehaviour
 {
     [SerializeField] Defender defenderPrefab;
     SpriteRenderer sprite;
+    TMP_Text costText;
 
     private void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
+        costText = GetComponentInChildren<TMP_Text>();
+        if (!costText)
+        {
+            Debug.LogError("No text");
+        }
+        else
+        {
+            costText.text = defenderPrefab.GetStarCost().ToString();
+        }
     }
 
     private void OnMouseDown()
